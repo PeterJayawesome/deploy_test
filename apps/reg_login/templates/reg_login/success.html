@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Login & Reg | Sccuess</title>
+</head>
+<body>
+	<h2>Success! Welcome, {{user.first_name}}</h2>
+	{% if request.session.log_reg == 'log' %}
+	<p>Successfully logged in!</p>
+	{% endif %}
+	{% if request.session.log_reg == 'reg' %}
+	<p>Successfully registered!</p>
+	{% endif %}
+	<a href="/">Go Back</a>
+</body>
+</html>
